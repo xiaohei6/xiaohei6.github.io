@@ -4,17 +4,17 @@
   
   
   <entry>
-    <title>my-first-blog</title>
-    <link href="/2020/09/29/my-first-blog/"/>
-    <url>/2020/09/29/my-first-blog/</url>
+    <title>My first blog post</title>
+    <link href="/2020/09/29/My%20first%20bolg%20post/"/>
+    <url>/2020/09/29/My%20first%20bolg%20post/</url>
     
-    <content type="html"><![CDATA[<h1 id="This-is-my-first-blog"><a href="#This-is-my-first-blog" class="headerlink" title="This is my first blog:"></a>This is my first blog:</h1><p>​    welcome to my blog, I will write down the learn life on the blog.</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="我的第一篇博客"><a href="#我的第一篇博客" class="headerlink" title="我的第一篇博客"></a>我的第一篇博客</h1><p>欢迎来参观我的博客，这里将记录我的大学生活以及学习的内容。</p>]]></content>
     
     
     
     <tags>
       
-      <tag>nothing</tag>
+      <tag>learn</tag>
       
     </tags>
     
