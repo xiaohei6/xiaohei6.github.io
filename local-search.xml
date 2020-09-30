@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Java中的++i与i++</title>
+    <link href="/2020/09/30/Java%E4%B8%AD%E7%9A%84-i%E4%B8%8Ei/"/>
+    <url>/2020/09/30/Java%E4%B8%AD%E7%9A%84-i%E4%B8%8Ei/</url>
+    
+    <content type="html"><![CDATA[<h1 id="java中i-与-i的区别"><a href="#java中i-与-i的区别" class="headerlink" title="java中i++与++i的区别"></a>java中i++与++i的区别</h1><ul><li><p>这篇文章可能对于大神没什么用，毕竟技术层次不够，大神追求的都是思想层面的东西。但对于一些初学者的话还是有一些用的，或者有跟我一样的已经入行一些时间了，但对这个理解模糊的(IT界估计也就我一个了 ~~捂脸!)都可以参阅学习，我写的比较详细，相信只要你看，就绝对会有收获</p></li><li><pre><code class="java">i++ 和++i<pre><code class="hljs plain">在区分这两个之前，我们先来了解一下它们的运算规则 </code></pre>int i=1,a=0;     * i++ 先赋值在运算,例如 a=i++,先赋值a=i,后运算i=i+1,所以结果是a==1     * ++i 先运算在赋值,例如 a=++i,先运算i=i+1,后赋值a=i,所以结果是a==2<pre><code class="hljs plain">例子：</code></pre>int i = 1;int j1 = i++; // 先将i的原始值（1）赋值给变量j1（1），然后i变量的值加1int j1 = ++i; // 先将i变量的值加1，然后将i的当前值（2）赋值给变量j1（2）</code></pre></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>learn</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>My first blog post</title>
     <link href="/2020/09/29/My%20first%20bolg%20post/"/>
     <url>/2020/09/29/My%20first%20bolg%20post/</url>
