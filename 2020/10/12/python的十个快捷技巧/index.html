@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>Hello World - Hi xiaohei</title>
+  <title>python的十个快捷技巧 - Hi xiaohei</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-09-28 23:29" pubdate>
-        2020年9月28日 晚上
+      <time datetime="2020-10-12 22:38" pubdate>
+        2020年10月12日 晚上
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      75 字
+      987 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      12
        分钟
     </span>
   
@@ -217,28 +217,119 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">python的十个快捷技巧</h1>
             
             <div class="markdown-body" id="post-body">
-              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span></code></pre>
+              <h1 id="python的几个编程技巧"><a href="#python的几个编程技巧" class="headerlink" title="python的几个编程技巧"></a>python的几个编程技巧</h1><p>​    通过对python的学习我们会发现python拥有许多优秀的快捷编程技巧，相对于其他的语言，python的简介以及python的作者告诉我们的python之禅，在编写python时用一些技巧将会将我们的代码看起来更加简洁，符合python的设计之意。接下来我将通过代码演示来讲解十个我知道的python编程技巧。</p>
+<h2 id="1-yeild的使用"><a href="#1-yeild的使用" class="headerlink" title="1.yeild的使用"></a>1.yeild的使用</h2><p>我们通过斐波拉切数列看看yeild的强大，代码如下：</p>
+<pre><code class="hljs python"><span class="hljs-comment"># def fibonacci(n):</span>
+<span class="hljs-comment">#   a = 0</span>
+<span class="hljs-comment">#   b = 1</span>
+<span class="hljs-comment">#   nums = []</span>
+<span class="hljs-comment">#   for _ in range(n):</span>
+<span class="hljs-comment">#     nums.append(a)</span>
+<span class="hljs-comment">#     a, b = b , a + b</span>
+<span class="hljs-comment">#   return nums</span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="hljs bash">$ hexo server</code></pre>
+<span class="hljs-comment"># yeild 加强美化版</span>
+<span class="hljs-comment"># def fibonacci(n):</span>
+<span class="hljs-comment">#   a = 0</span>
+<span class="hljs-comment">#   b = 1</span>
+<span class="hljs-comment">#   for _ in range(n):</span>
+<span class="hljs-comment">#     yield a</span>
+<span class="hljs-comment">#     a, b = b, a+b</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment">#</span>
+<span class="hljs-comment"># for i in fibonacci(10):</span>
+<span class="hljs-comment">#   print(i)</span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate</code></pre>
+<h2 id="2-列表解析式"><a href="#2-列表解析式" class="headerlink" title="2.列表解析式"></a>2.列表解析式</h2><p>列表解析式主要用于简化遍历操作，通过简单的一行代码将简化几行代码，这样对于代码的简化是很大的进步，虽然这样会减少可读性，不过用好列表生成式将会节约我们不少打字的时间，例子代码如下：</p>
+<pre><code class="hljs python"><span class="hljs-comment"># 列表解析式</span>
+<span class="hljs-comment"># fruit = [&quot;apple&quot;, &quot;pear&quot;, &quot;orange&quot;, &quot;banana&quot;]</span>
+<span class="hljs-comment"># 将每一个首字母改成大写</span>
+<span class="hljs-comment"># 原方法</span>
+<span class="hljs-comment"># for i in range(len(fruit)):</span>
+<span class="hljs-comment">#   fruit[i] = fruit[i].upper()</span>
+<span class="hljs-comment"># 列表生成式版</span>
+<span class="hljs-comment"># fruit = [x.upper() for x in fruit]</span>
+<span class="hljs-comment"># 筛选</span>
+<span class="hljs-comment"># filtered_friut = []</span>
+<span class="hljs-comment"># for f in fruit:</span>
+<span class="hljs-comment">#   if f.startswith(&quot;a&quot;):</span>
+<span class="hljs-comment">#     filtered_friut.append(f)</span>
+<span class="hljs-comment"># print(filtered_friut)</span>
+<span class="hljs-comment"># 列表解释式版</span>
+<span class="hljs-comment"># filtered_friut = [x for x in fruit if x.startswith(&quot;a&quot;)]</span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy</code></pre>
+<h2 id="3-enumerate函数的运用"><a href="#3-enumerate函数的运用" class="headerlink" title="3.enumerate函数的运用"></a>3.enumerate函数的运用</h2><p>enumerate函数，主要提高循环的代码简化度，这里就不赘述了，我们直接看代码.</p>
+<pre><code class="hljs python"><span class="hljs-comment"># 循环技巧 enumerate函数</span>
+<span class="hljs-comment"># 按顺序输出水果名字同时得到对应索引值</span>
+<span class="hljs-comment"># 一般方法</span>
+<span class="hljs-comment"># for x in enumerate(fruit):</span>
+<span class="hljs-comment">#   print(x)</span>
+<span class="hljs-comment"># 反向遍历,元素从后往前输出</span>
+<span class="hljs-comment"># for x in enumerate(reversed(fruit)):</span>
+<span class="hljs-comment">#   print(x)</span>
+<span class="hljs-comment"># 按顺序遍历</span>
+<span class="hljs-comment"># for x in enumerate(sorted(fruit)):</span>
+<span class="hljs-comment">#   print(x)</span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="4-字典的合并操作"><a href="#4-字典的合并操作" class="headerlink" title="4. 字典的合并操作"></a>4. 字典的合并操作</h2><p>在两个字典合并的时候我们如果通过遍历每个列表然后再加入一个字典中会写两个遍历而我们用下面的方法只需要简单的几个字符，详情看代码。</p>
+<pre><code class="hljs python"><span class="hljs-comment"># 字典的合并操作</span>
+<span class="hljs-comment"># a = &#123;&quot;ross&quot; : &quot;123456&quot;,&quot;xiaoming&quot;: &quot;abc123&quot;&#125;</span>
+<span class="hljs-comment"># b = &#123;&quot;lilei&quot;: &quot;111111&quot;,&quot;zhangsan&quot;: &quot;12345678&quot;&#125;</span>
+<span class="hljs-comment"># c = &#123;&#125;</span>
+<span class="hljs-comment"># for k in a:</span>
+<span class="hljs-comment">#   c[k] = a[k]</span>
+<span class="hljs-comment"># for k in b:</span>
+<span class="hljs-comment">#   c[k] = b[k]</span>
+<span class="hljs-comment"># print(c)</span>
+<span class="hljs-comment"># 解包简写</span>
+<span class="hljs-comment"># c = &#123;**a, **b&#125;</span></code></pre>
+
+<h2 id="5-三元运算符"><a href="#5-三元运算符" class="headerlink" title="5.三元运算符"></a>5.三元运算符</h2><p>在python中和Java，c一样拥有三元运算符，但是他们编写的方式却是不相同的</p>
+<p>在python中三元运算符，前面表示最后结果，中间表示条件，最后表示另一个结果，这里运用的if,else的例子，同样我们也可以用其他的条件语句。</p>
+<pre><code class="hljs python"><span class="hljs-comment"># 三元运算符</span>
+<span class="hljs-comment"># score = int(input())</span>
+<span class="hljs-comment"># if score &gt; 60:</span>
+<span class="hljs-comment">#   s = &quot;pass&quot;</span>
+<span class="hljs-comment"># else:</span>
+<span class="hljs-comment">#   s = &quot;fail&quot;</span>
+<span class="hljs-comment">#   print(s)</span>
+<span class="hljs-comment"># s =  &quot;pass&quot; if score &gt; 60 else &quot;fail&quot;</span>
+<span class="hljs-comment"># print(s)</span></code></pre>
+
+<h2 id="6-序列解包"><a href="#6-序列解包" class="headerlink" title="6. 序列解包"></a>6. 序列解包</h2><p>提醒这里的序列不一定是列表，元组，range同样适用，我们直接看例子</p>
+<pre><code class="hljs python"><span class="hljs-comment"># 序列解包 (注意序列不一定式列表，元组或range)</span>
+<span class="hljs-comment"># 单独提取出姓和名</span>
+<span class="hljs-comment"># name = &quot;san zhang&quot;</span>
+<span class="hljs-comment"># first_name, last_name = name.split()</span></code></pre>
+
+<h2 id="7-with-语句"><a href="#7-with-语句" class="headerlink" title="7. with 语句"></a>7. with 语句</h2><p>这个技巧我们通常运用在文件读取的程序中，同样直接上例子</p>
+<pre><code class="hljs python"><span class="hljs-comment"># with语句(读取文件内容)</span>
+<span class="hljs-comment"># 一般方法</span>
+<span class="hljs-comment">#  f = open(&quot;somefile.txt&quot;,&quot;r&quot;)</span>
+<span class="hljs-comment">#  s = f.read()</span>
+<span class="hljs-comment">#  f.close() # 这个必须加上避免一直占用该资源</span>
+<span class="hljs-comment"># with方法</span>
+<span class="hljs-comment"># with open(&quot;somefile.txt&quot;, &quot;r&quot;) as f:</span>
+<span class="hljs-comment">#   s = f.read()</span></code></pre>
+
+<p>​    好啦，这里关于python代码的技巧，我先更新到这儿，关于python有些更加方便更加美化的代码，我们可以去搜索python的魔法语句，这里就不做过多的介绍。</p>
+<p>​    最后感谢您的观看，初次写文章，有很多不足，请见谅，如有错误请留言。</p>
 
             </div>
             <hr>
             <div>
               <div class="post-metas mb-3">
                 
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/python/">python</a>
+                    
+                  </div>
                 
               </div>
               
@@ -249,15 +340,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/09/29/My%20first%20bolg%20post/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">My first blog post</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2020/09/30/Java%E4%B8%AD%E7%9A%84-i%E4%B8%8Ei/">
+                        <span class="hidden-mobile">Java中的++i与i++</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
@@ -397,7 +488,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hello World&nbsp;",
+        "python的十个快捷技巧&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
