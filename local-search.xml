@@ -4,6 +4,38 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2021/01/05/sts%E6%B1%89%E5%8C%96/"/>
+    <url>/2021/01/05/sts%E6%B1%89%E5%8C%96/</url>
+    
+    <content type="html"><![CDATA[<h1 id="sts汉化"><a href="#sts汉化" class="headerlink" title="sts汉化"></a>sts汉化</h1><p>由于sts是eclipse的特殊版本，对于它的汉化同样适用于eclipse，这里我们运用的是下在汉化包然后文件方式加入软件文件目录的方法汉化。</p><p>1.首先我们要去<a href="https://download.eclipse.org/technology/babel/babel_language_packs/R0.18.2/2020-12/2020-12.php%E7%BD%91%E5%9D%80%E4%B8%8B%E8%BD%BD%E6%88%91%E4%BB%AC%E5%AF%B9%E5%BA%94%E7%9A%84%E6%B1%89%E5%8C%96%E5%8C%85%EF%BC%8C%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E7%9A%84%E6%98%AF%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E6%89%80%E4%BB%A5%E6%B1%89%E5%8C%96%E7%89%88%E5%A6%82%E4%B8%8B%E7%BA%A2%E7%82%B9">https://download.eclipse.org/technology/babel/babel_language_packs/R0.18.2/2020-12/2020-12.php网址下载我们对应的汉化包，我们需要的是简体中文所以汉化版如下红点</a></p><p><img src="https://i.loli.net/2021/01/05/YGkSNHcUAf5B1WD.png" alt="image-20210105233459618"></p><p>2.下载好之后我们就会得到以下文件</p><p><img src="https://i.loli.net/2021/01/05/u5kpbANTKcVeS6I.png" alt="image-20210105233637578"></p><p>这个时候我们需要的汉化插件文件已经具备了，我们只需要把它放到正确的位置就可以了</p><p>3.将这两个文件解压到sts软件文件夹中的dropins文件夹中，然后重启sts就可以愉快的享受中文了。</p><p>路径如下图：</p><p><img src="https://i.loli.net/2021/01/05/MoZdthQUsxqAHj5.png" alt="image-20210105233917838"></p><p>注：由于我安装的是解压版所以存在路径不同需要操作者自行寻找一下。</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>OJ搭建记录</title>
+    <link href="/2020/10/26/OJ%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/"/>
+    <url>/2020/10/26/OJ%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<h1 id="记录一次通过青岛OJ开源平台搭建自己的oj"><a href="#记录一次通过青岛OJ开源平台搭建自己的oj" class="headerlink" title="记录一次通过青岛OJ开源平台搭建自己的oj"></a>记录一次通过青岛OJ开源平台搭建自己的oj</h1><p>​      为什么要搭建oj？在各种平台刷题过于无聊了，想要和其他人一起分享自己喜欢的题，同时因为以前用过青岛OJ进行考核，搭建和部署比较简单，自然想搭建一个来玩玩，于是去请教ZY大大。🆗多的不说，开干！</p><h2 id="一些必备的网站"><a href="#一些必备的网站" class="headerlink" title="一些必备的网站"></a>一些必备的网站</h2><p>   1.github地址：<a href="https://github.com/QingdaoU/OnlineJudge/blob/master/README-CN.md">https://github.com/QingdaoU/OnlineJudge/blob/master/README-CN.md</a></p><p>   2.官方文档：<a href="https://docs.onlinejudge.me/#/onlinejudge/guide/using_cdn">https://docs.onlinejudge.me/#/onlinejudge/guide/using_cdn</a></p><p>   3.阿里云：<a href="https://www.aliyun.com/">https://www.aliyun.com/</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>life</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>python的十个快捷技巧</title>
     <link href="/2020/10/12/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%BF%AB%E6%8D%B7%E6%8A%80%E5%B7%A7/"/>
     <url>/2020/10/12/python%E7%9A%84%E5%87%A0%E4%B8%AA%E5%BF%AB%E6%8D%B7%E6%8A%80%E5%B7%A7/</url>
